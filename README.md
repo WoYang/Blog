@@ -1432,9 +1432,9 @@ class ChangeNotifier implements Listenable {
 
 2.抽象一个Root Widget作为父视图，参考Android View事件分发机制实现
 
-    优点：框架比较清晰，焦点逻辑的抽离利于项目部署
+优点：框架比较清晰，焦点逻辑的抽离利于项目部署
     
-    缺点：需要重写大部分的Widget，内容较多，Flutter SDK的更新可能导致兼容性问题
+缺点：需要重写大部分的Widget，内容较多，Flutter SDK的更新可能导致兼容性问题
 
 ###结束语
 
