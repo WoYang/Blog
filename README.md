@@ -1427,6 +1427,7 @@ class ChangeNotifier implements Listenable {
 参考代码:https://github.com/WoYang/tv_demo
 
 实现效果：
+
 效果预览:https://upload-images.jianshu.io/upload_images/3613947-f20df9cc84e9f793.gif?imageMogr2/auto-orient/strip
 
 2.抽象一个Root Widget作为父视图，参考Android View事件分发机制实现
