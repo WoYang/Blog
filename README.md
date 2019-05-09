@@ -27,6 +27,7 @@ b.使用Dart binding，避免了React Native等跨平台方案通过桥接器与
 4.基于Flutter的第三方集成正在增长，越来越多的技术会在Flutter上得以实现，是个挑战也是个机遇。
 
 # 2.使用中将要面临的问题
+
 1.能跨平台的是Flutter，其他资源比如播放器库，不能保证Android平台上的so能在IOS上正常运行，所以我们理解为UI能跨平台应该是更准确。
 
 2.Flutter是用基于Skia来绘制控件，虽然能最大程度发挥性能，但也意味着要有很长的路要走。
@@ -34,6 +35,7 @@ b.使用Dart binding，避免了React Native等跨平台方案通过桥接器与
 3.Flutter是正在开源的项目，处于快速发展且不稳定阶段，有些需求还不支持，在使用Flutter实现客户化定制时，成本较大。
 
 # 3.如何解决问题
+
   目前大多数的需求开发都需要投入很大精力在造轮子的事情上，这是现状。
   
 要把Flutter方案直接投入大规模商业使用，对于任何公司都是一个巨大挑战。
@@ -66,9 +68,10 @@ Flutter源码：
 **framework**:https://github.com/flutter/flutter
 
 **engine**:https://github.com/flutter/engine
+
 ----------------------------------------------------------------------------------------------------------------------------------------
-###Flutter TV端探索
-：
+###Flutter TV端探索：
+
 把Flutter适用到TV端，首先考虑到的就是操作体验。TV上通过遥控器实现操作，那么在Flutter中对遥控器的支持如何呢？
 
 经过简单的尝试后，很遗憾的发现Flutter上的Widget对Touch事件的做了全面支持，但是在KeyEvent事件上并不友好。
@@ -195,7 +198,7 @@ public class FlutterApplication extends Application {
 }
 ~~~
 在onCreat中完成了[FlutterMain.java](https://github.com/flutter/engine/blob/master/shell/platform/android/io/flutter/view/FlutterMain.java)初始化:
-~~~
+~~~Java
     /**
      * Starts initialization of the native system.
      * @param applicationContext The Android application context.
